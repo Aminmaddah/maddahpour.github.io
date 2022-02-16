@@ -1,0 +1,172 @@
+@font-face{
+    font-family: typewriter;
+    src: url('src/JMH\ Typewriter-Thin.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #202124;
+    font-family: typewriter;
+}
+
+hr {
+    margin: auto;
+    border-color: #808080;
+    height: 2px;
+}
+
+i.fa {
+    color: #BB86FC;
+}
+
+i.fas {
+    color: #BB86FC;
+}
+
+.pb100 {
+    width: 100%;
+}
+.pb50 {
+    width: 50%;
+}
+.pb10 {
+    width: 10%;
+}
+.pb20 {
+    width: 20%;
+}
+
+.label {
+    padding: 3px 5px;
+    background-color: #BB86FC;
+    border-radius: 5px;
+}
+
+.container {
+    width: 98%;
+    padding: 1%;
+}
+
+.left-side {
+    background-color: #303134;
+    display: inline-block;
+    width: 20%;
+    margin: 0.5%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.right-side {
+    display: inline-block;
+    width: 77%;
+    margin: 0.5%;
+    vertical-align: top;
+}
+
+.right-side section {
+    background-color: #303134;
+    margin-bottom: 2%;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+#profile-box {
+    position: relative;
+}
+
+#profile-box #profile-img {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+#profile-box #profile-name {
+    width: 96%;
+    background-color: rgba(0,0,0,0.4);
+    color: black;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    font-size: 21px;
+}
+
+#description-box {
+    padding: 15px;
+}
+
+#description-box ul {
+    list-style: none;
+}
+
+#description-box ul li {
+    margin-bottom: 15px;
+}
+
+#description-box ul li i.fa {
+    color: #BB86FC;
+    font-size: 18px;
+}
+
+#description-box ul li span {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.aside-items {
+    padding: 15px;
+    color: #fff;
+    margin: 5px 0 15px;
+}
+.item-title {
+    margin-left: 5px;
+}
+.skill-item {
+    margin-top: 15px;
+}
+.progress-box {
+    background-color: #eee;
+    border-radius: 15px;
+    width: 100;
+    text-align: center;
+    margin-top: 15px;
+}
+.progress-box .progress-bar {
+    background-color: #BB86FC;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.head-title {
+    font-size: 26px;
+    color: #fff;
+}
+
+.right-side-item {
+    color: #fff;
+}
+.right-side-item h3,
+.right-side-item h5{
+    margin: 16.2px 0;
+}
+.right-side-item p {
+    margin: 20px 0 60px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .left-side {
+        display: block;
+        width: 99%
+    }
+    .right-side {
+        display: block;
+        width: 99%;
+    }
+}
+
+
