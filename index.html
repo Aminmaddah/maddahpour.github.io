@@ -1,176 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Amin Maddahpour</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale.0"/>
-        <link rel="stylesheet" href="main.css"/>
-        <link href="src/font/FontAwesome.Pro.5.15.4.Web/css/all.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.5">
+        <link rel="stylesheet" href="main.css">
+        <title>Calculator</title>
     </head>
-
     <body>
+        <div class="container">
+            <div class="calculator">
+                <input type="text" placeholder="0" id="output-screen">
+                <button onclick="Clear()">Cl</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('*')">*</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('-')">-</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('+')">+</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="Calculator()" class="equal">=</button>
+            </div>
+        </div>
 
-        <main class="container">
+        <script>
+            let outputScreen = document.getElementById("output-screen");
 
-            <aside class="left-side">
-                <section id="profile-box">
-                    <img id="profile-img" src="src/photo_2022-02-15_19-01-17.jpg"/>
-                    <div id="profile-name">
-                        <span>Amin Maddahpour</span>
-                    </div>
-                </section>
-                <section id="description-box">
-                    <ul>
-                        <li>
-                            <i class="fa fa-briefcase"></i>
-                            <span>Software Information Technology</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-home"></i>
-                            <span>Tehran, IR</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i>
-                            <span>maddahpour.amin@gmail.com</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <span>+98 9354557462</span>
-                        </li>
-                    </ul>
-                    <hr/>
-                </section>
-                <section class="aside-items">
-                    <h3>
-                        <i class="fa fa-asterisk"></i>
-                        <b class="item-title">Skills</b>
-                    </h3>
-                    <div class="skill-item">
-                        <b>Html , Css</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb100">100%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>JavaScript</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb100">100%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>Java</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb10">10%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>C#</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb50">50%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>C++</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb10">10%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>Sql</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb10">10%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>Es6</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb20">20%</div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="aside-items">
-                    <h3>
-                        <i class="fa fa-globe"></i>
-                        <b id="item-title">Languages</b>
-                    </h3>
-                    <div class="skill-item">
-                        <b>Persian</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb100">100%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <b>English</b>
-                        <div class="progress-box">
-                            <div class="progress-bar pb50">50%</div>
-                        </div>
-                    </div>
-                </section>
-            </aside>
-        
-            <section class="right-side">
-                <section>
-                    <br/>
-                    <article class="right-side-item">
-                        <h2>Since 2020, I started my activity in web development and programming. Programmer and web designer with over 1 year programming and experienced web developed skills at all stages of web development are a variety of programming skills in</h2>
-                        <h2>HTML, CSS, ASP.NET, C #, JavaScript</h2>
-                            <h2>With the ability to do the project singly and group cooperation now summarizes</h2>
-                            <br/>
-                    </article>
-                    <h1 class="head-title">
-                        <i class="fa fa-suitcase"></i>
-                        <b class="item-title">Work Experience</b>
-                    </h1>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>Store site design</h3>
-                        <h5><i class="fa fa-calendar"></i> Des 2021 - Feb 2022 </h5>
-                    </article>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>------------------</h3>
-                        <h5><i class="fa fa-calendar"></i> --- ---- - --- ---- </h5>
-                    </article>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>------------------</h3>
-                        <h4><i class="fa fa-calendar"></i> --- ---- - --- ----</h4>
-                        <p></p>
-                    </article>
-                    <h1 class="head-title">
-                        <i class="fas fa-graduation-cap"></i>
-                        <b class="item-title">Education</b>
-                    </h1>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>Vocational School Shohada</h3>
-                        <h4><i class="fa fa-calendar"></i> Sep 2020 - --- ----</h4>
-                        <p></p>
-                    </article>
-                </section>
-                <section>
-                    <h1 class="head-title">
-                        <i class="fa fa-certificate"></i>
-                        <b class="item-title">Certificates</b>
-                    </h1>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>Daneshjoohar</h3>
-                        <h4><i class="fa fa-calendar"></i> 2021 - 2022 <span class="label">Current</span></h4>
-                        <p>JavaScript & C# & C++</p>
-                    </article>
-                    <hr/>
-                    <br/>
-                    <article class="right-side-item">
-                        <h3>Holosen</h3>
-                        <h4><i class="fa fa-calendar"></i> 2022 </h4>
-                        <p>Html , Css & -----------</p>
-                    </article>
-                </section>
-            </section>>
-            
-        </main>
-
+            function display(num){
+                outputScreen.value += num
+            }
+            function Calculator(){
+                try{
+                    outputScreen.value = eval(outputScreen.value);
+                }
+                catch(err)
+                {
+                    alert("Invalid")
+                }
+            }
+            function Clear(){
+                outputScreen.value = "";
+            }
+            function del(){
+                outputScreen.value = outputScreen.value.slice(0,-1)
+            }
+        </script>
     </body>
 </html>
